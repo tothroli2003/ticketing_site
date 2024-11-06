@@ -1,0 +1,121 @@
+@import url("nav.css");
+
+.ticket{
+    background-color: var(--secondary);
+    width:90%;
+    border: 2px solid black;
+    margin:15px;
+    margin-right: 0;
+    
+}
+form{
+    margin-bottom: 30px;
+}
+main{
+    margin-bottom: 30px;
+}
+.ticket *{
+    display: inline-flex;
+    min-height: 100px;
+    align-items: center;
+}
+.type,#type{
+    font-weight: 900;
+    font-size: 32px;
+    padding-left: 24px;
+    width: 25%;
+}
+.ar,.db,#ar,#db{
+    font-size: 28px;
+    font-weight: 400;
+    width:25%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+
+}
+#db,#ar,#type{
+    background-color: var(--secondary)!important;
+    border:none;
+    
+    font-family: unset;
+}
+#db,#ar{
+    padding: 0;
+}
+
+
+.db,#db{
+    width: 25%;
+    border-right:8px dashed black;
+}
+
+
+#btn{
+    font-weight: 900;
+    color:var(--primary);
+    border-radius:50%;
+    border: 6px solid var(--primary);
+    font-size: 72px;
+    background-color: var(--secondary);
+    min-height: unset;
+    line-height: 1;
+    padding: 0 10px;
+    vertical-align: middle;
+    margin-left: calc(12.5% - 46px);
+    margin-top: -10px;
+}
+#btn:hover{
+    background-color: var(--accent);
+}
+.void{
+    min-height:0!important;
+    height:72px!important;
+    display: none;
+}
+@media (max-width: 1200px) {
+    .ticket{
+        display: inline-flex;
+        flex-direction: column;
+        
+        width: 30%!important;
+    }
+    .ticket *{
+        max-width: none!important;
+        width:100%!important;
+        justify-content: center;
+        text-align:center!important;
+        display: flex;
+    }
+    .soldout{
+        padding-inline: none;
+        margin: 0 auto;
+    }
+    #btn{
+        border: none;
+        border-radius: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    #db,.db{
+        border: none;
+        border-bottom: 8px dashed black;
+    }
+    input#darab{
+        padding-block: 24px;
+    }
+    input[type="submit"],.soldout,.type,#type{
+        font-size: 48px;
+    }
+}
+@media (max-width: 776px){
+    .ticket{
+        width: 45%!important;
+    }
+}
+@media(max-width: 480px){
+    .ticket{
+        width: 95%!important;
+    }
+}
+

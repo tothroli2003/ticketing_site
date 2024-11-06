@@ -1,0 +1,33 @@
+@import url("nav.css");
+@import url("event.css");
+#cart-btns{
+    width: 90%;
+    margin: 10px auto;
+}
+
+#cart-btns *{
+    width:calc(50% - 10px)!important;
+    margin: 1px;
+    background-color: var(--secondary);
+    border: 3px solid var(--accent);
+    font-size: 32px;
+    padding:15px 5px; 
+    display:inline-block;
+}
+#cart-btns *:hover{
+    background-color: var(--accent);
+    color: var(--secondary);
+}
+.type{
+    width:calc(39% - 10px);
+}
+.db,.osszeg,.ar{
+    width:20%;
+
+}
+
+.jegynev{
+    font-size: 24px;
+    margin-left: 7px;
+    
+}

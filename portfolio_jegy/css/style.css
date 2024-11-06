@@ -1,0 +1,63 @@
+@import url("nav.css");
+main{
+    margin-left: 15px;
+    margin-top: 130px;
+}
+h1{
+    color:var(--secondary)!important;
+    padding:10px;
+    text-align: center;
+}
+a{
+    text-decoration: none!important;
+}
+.event-card{
+    
+    display: inline-flex;
+    width: calc(25% - 40px);
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1;
+    transition: ease-in .5s;
+    border: 2px solid var(--accent);
+    align-items: flex-end;
+}
+
+.event-description{
+    padding-left:10px;
+    height: 33%;
+    background-color: rgba(0,0, 0, .5);
+    width:100%;
+    font-size: 30px;
+    color: var(--secondary)!important;
+}
+.event-description:hover{
+    background-color: rgba(0, 0, 0, .75);
+    
+}
+.event-date{
+    font-size: 20px!important;
+    padding-top: 10px;
+}
+@media screen and (max-width:1200px) {
+    .event-card{
+        width:calc(33% - 10px);
+    }
+   
+    main{margin:0;padding:0;}
+    
+}
+@media screen and (max-width:768px) {
+    .event-card{
+        width:calc(50% - 30px);
+    }
+}
+@media screen and (max-width:480px) {
+    .event-card{
+        width:calc(100% - 30px);
+    }
+    .event-card:hover{
+        transform: none;
+    }
+}

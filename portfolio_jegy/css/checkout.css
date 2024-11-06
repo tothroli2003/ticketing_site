@@ -1,0 +1,40 @@
+@import url("nav.css");
+form{
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+        background-color: var(--secondary)!important;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+form *{
+    width: 80%;
+    display:block;
+    margin: 0 auto;
+    background-color: var(--secondary);
+    
+}
+form *:not(h1){
+    font-size: 22px;
+}
+h1{
+    padding-block: 30px;
+}
+p{
+    margin-top: 30px;
+}
+input[type="submit"]{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 900;
+    transition: .5s;
+    padding: 15px 5px;
+    border-radius: 10px;
+}
+input[type="submit"]:hover{
+    background-color: var(--accent);
+    color:var(--secondary);
+}
+#highlight{
+    display:inline;
+}
